@@ -84,8 +84,8 @@
 
   /* ---------- hero ---------- */
   .hero {
-    position: relative; height: clamp(600px, 86vh, 780px); display: flex; align-items: flex-end;
-    padding: 120px 40px 72px; overflow: hidden; isolation: isolate;
+    position: relative; height: clamp(440px, calc(100vh - 190px), 720px); display: flex; align-items: center;
+    padding: 72px 40px 40px; overflow: hidden; isolation: isolate;
   }
   .hero .still {
     position: absolute; top: 0; right: 0; bottom: 0; height: 100%; width: auto; aspect-ratio: 1 / 1; max-width: 58%; z-index: -2;
@@ -112,7 +112,7 @@
   .badge .t { font-size: 14px; font-weight: 700; letter-spacing: .32em; color: var(--ink-soft); }
   h1 {
     font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400;
-    font-size: clamp(100px, 15vw, 208px); line-height: .84; letter-spacing: .01em;
+    font-size: clamp(96px, min(15vw, 22vh), 208px); line-height: .84; letter-spacing: .01em;
     margin-bottom: 20px;
   }
   h1 .accent {
@@ -146,7 +146,7 @@
   .row-title small { font-family: "Inter", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--red); }
 
   /* stat tiles */
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: -24px; position: relative; z-index: 2; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 12px; position: relative; z-index: 2; }
   .stat {
     position: relative; overflow: hidden; border-radius: 12px; padding: 26px 26px 24px;
     background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow);
