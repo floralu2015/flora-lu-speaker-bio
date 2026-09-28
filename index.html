@@ -112,7 +112,7 @@
   .badge .t { font-size: 14px; font-weight: 700; letter-spacing: .32em; color: var(--ink-soft); }
   h1 {
     font-family: "Bebas Neue", Impact, sans-serif; font-weight: 400;
-    font-size: clamp(84px, 12vw, 168px); line-height: .86; letter-spacing: .01em;
+    font-size: clamp(100px, 15vw, 208px); line-height: .84; letter-spacing: .01em;
     margin-bottom: 20px;
   }
   h1 .accent {
@@ -124,8 +124,9 @@
   :root[data-theme="light"] .meta .match { color: #0E8F4A; }
   .meta .pill { border: 1px solid var(--muted); color: var(--ink-soft); padding: 1px 8px; border-radius: 4px; font-size: 14px; font-weight: 600; }
   .meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--muted); }
-  .roles { font-size: 22px; line-height: 1.5; color: var(--ink); font-weight: 600; margin-bottom: 6px; }
-  .roles .sep { color: var(--red); padding: 0 8px; }
+  .roles { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+  .role-line { font-size: 22px; line-height: 1.4; color: var(--ink); font-weight: 600; display: flex; align-items: baseline; gap: 12px; }
+  .role-line .rn { font-family: "Bebas Neue", sans-serif; font-size: 15px; color: var(--red); border: 1px solid var(--red); border-radius: 4px; padding: 1px 6px; letter-spacing: .06em; }
   .org { font-size: 18px; color: var(--ink-soft); margin-bottom: 26px; }
   .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
   .cta {
@@ -248,8 +249,7 @@
       -webkit-mask-image: linear-gradient(0deg, transparent 5%, #000 55%); mask-image: linear-gradient(0deg, transparent 5%, #000 55%); }
     .hero::before { background: linear-gradient(0deg, var(--hero-fade) 36%, transparent 62%), radial-gradient(80% 50% at 30% 70%, var(--glow), transparent 70%); }
     .hero-inner { margin-top: -110px; }
-    .roles { font-size: 19px; }
-    .roles .sep { display: block; height: 0; overflow: hidden; }
+    .role-line { font-size: 18px; }
     main { padding: 0 16px 56px; }
     .stats { grid-template-columns: 1fr; margin-top: 0; }
     .feature { grid-template-columns: 1fr; gap: 6px; padding: 24px 20px; }
@@ -280,19 +280,17 @@
 <section class="hero" style="margin-top:0">
   <div class="still" role="img" aria-label="Headshot of Flora Lu"></div>
   <div class="hero-inner">
-    <div class="badge rise d1"><span class="n">N</span><span class="t">SPEAKER</span></div>
     <h1 class="rise d2">Flora <span class="accent">Lu</span></h1>
     <div class="meta rise d3">
       <span class="match">15 Years at Netflix</span><span class="dot"></span>
       <span>Wharton MBA, Class of 2025</span><span class="dot"></span>
       <span class="pill">GARTNER FINALIST</span>
     </div>
-    <div class="roles rise d4">Data and AI Lead, Revenue Analytics<span class="sep">|</span>Co-Lead, Finance &amp; Strategy AI Working Group</div>
-    <div class="org rise d4">Finance &amp; Strategy, Netflix</div>
-    <div class="ctas rise d5">
-      <span class="cta primary">▶&nbsp; Wednesday, October 14</span>
-      <span class="cta ghost">ⓘ&nbsp; INSEAD × Netflix</span>
+    <div class="roles rise d4">
+      <div class="role-line"><span class="rn">01</span>Data and AI Lead, Revenue Analytics</div>
+      <div class="role-line"><span class="rn">02</span>Co-Lead, Finance &amp; Strategy AI Working Group</div>
     </div>
+    <div class="org rise d4" style="margin-bottom:0">Finance &amp; Strategy, Netflix</div>
   </div>
 </section>
 
@@ -340,7 +338,7 @@
     <div class="teams">
       <div class="team">Content</div><div class="team">Marketing</div><div class="team">Product</div>
       <div class="team">Growth &amp; Monetization</div><div class="team">Partnerships</div><div class="team">Payments</div>
-      <div class="team home">Revenue Analytics</div><div class="team">Ads</div><div class="team">Technology</div>
+      <div class="team">Revenue Analytics</div><div class="team">Ads</div><div class="team">Technology</div>
       <div class="team">Games</div><div class="team">Consumer / Experiences</div><div class="team">Studio</div>
     </div>
 
